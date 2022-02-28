@@ -1,0 +1,36 @@
+{
+  "device":
+  {
+    "id": "03332",
+    "name": "VCN530C",
+    "signals": {
+      "currentMode": ""
+    },
+    "modes": [
+      {
+        "id": 1001,
+        "title": "AUTO",
+        "status": false,
+        "description": "Machine in production cycle",
+        "color": "#35ff12",
+        "alerts": ["Running", "Auto ok"]
+      },
+      {
+        "id": 1002,
+        "title": "SETUP",
+        "status": true,
+        "description": "Machine in manual mode. Setup",
+        "color": "#ffff00",
+        "alerts": ["Workpiece calibration", "Preparing barfeeder", "Turret tools setup", "Preparing robot"]
+      },
+      {
+        "id": 1003,
+        "title": "ALARM",
+        "status": false,
+        "description": "Machine in alarm mode. STOP",
+        "color": "#ff0000",
+        "alerts": ["X axis damage", "Spindle overheat","Robot arm broken"]
+      }
+    ]
+  }
+}
